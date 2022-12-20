@@ -1,0 +1,168 @@
+* {
+  font-family: "Press Start 2P";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease;
+  font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(116, 208, 159) 0%, rgb(95, 188, 207) 100%);
+}
+
+.container {
+  padding-top: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+}
+.container .header .top {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.container .header .top .button {
+  font-size: 100%;
+  margin: 0;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 2.5rem;
+  border: 0.3rem solid #000;
+}
+.container .header .top .button:hover {
+  box-shadow: 0px 0px 38px 0px rgb(255, 0, 0);
+  -webkit-box-shadow: 0px 0px 38px 0px rgb(255, 0, 0);
+  -moz-box-shadow: 0px 0px 38px 0px rgb(255, 0, 0);
+}
+.container .header .top .between {
+  font-size: 100%;
+  margin: 0;
+  padding: auto;
+}
+.container .header .bottom {
+  padding-top: 5rem;
+  text-align: center;
+  align-items: center;
+  font-size: 5rem;
+}
+.container .header .bottom .guessNumber {
+  font-size: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.container .header .bottom .number {
+  font-size: 100%;
+  width: 30%;
+  margin: auto;
+  height: auto;
+  padding: 4rem 0 1rem 0;
+}
+.container .medium {
+  margin-top: 5rem;
+  display: flex;
+  width: 100%;
+}
+.container .medium .left {
+  display: flex;
+  flex-direction: column;
+  font-size: 3.5rem;
+  width: 50%;
+}
+.container .medium .left .guess {
+  font-size: 100%;
+  width: 60%;
+  margin: auto;
+  height: 10rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(245, 238, 238);
+  border: solid 5px #000;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  margin-bottom: 10rem;
+  outline: none;
+}
+.container .medium .left .check {
+  height: auto;
+  font-size: 135%;
+  margin: auto;
+  margin-bottom: 10rem;
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+}
+.container .medium .left .check:hover {
+  border-radius: 3px solid rgb(255, 0, 0);
+  border-color: rgb(255, 0, 0);
+  box-shadow: 0px 0px 38px 0px rgb(255, 0, 0);
+  -webkit-box-shadow: 0px 0px 38px 0px rgb(255, 0, 0);
+  -moz-box-shadow: 0px 0px 38px 0px rgb(255, 0, 0);
+}
+.container .medium .right {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.container .medium .right .message {
+  font-size: 100%;
+  font-weight: bolder;
+}
+.container .medium .right .lable-score {
+  margin: 4.1rem 0;
+  font-size: 100%;
+}
+.container .medium .right .lable-score .score {
+  font-size: 150%;
+}
+.container .medium .right .lable-highscore {
+  font-size: 100%;
+}
+.container .medium .right .lable-highscore .highscore {
+  font-size: 150%;
+}
+.container .bottom i {
+  font-size: 15rem;
+  color: #ddce30;
+  animation-name: danger;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: none;
+}
+@keyframes danger {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
